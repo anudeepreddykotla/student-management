@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3001/students';
+const BASE_URL = 'http://localhost:8000/students';
 
 export const getStudents = () => axios.get(BASE_URL);
 export const getStudentById = (id) => axios.get(`${BASE_URL}/${id}`);

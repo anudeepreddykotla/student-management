@@ -28,7 +28,7 @@ const StudentList = () => {
     const confirmDelete = window.confirm("Delete this student?");
     if (confirmDelete) {
       try {
-        await deleteStudent(id);                        
+        await deleteStudent(id);                         
         setStudents((prev) => prev.filter((s) => s._id !== id));
         toast.success('Student deleted successfully!', {
           position: toast.POSITION.TOP_RIGHT,
@@ -94,9 +94,7 @@ const StudentList = () => {
           <tbody className="divide-y divide-gray-100 bg-white">
             {students.map((s) => (
               <tr key={s._id} className="hover:bg-gray-50">
-                <td className="whitespace-nowrap px-3 py-2 font-mono">
-                  {s.studentId}
-                </td>
+                <td className="whitespace-nowrap px-3 py-2 font-mono">{s.studentId}</td>
                 <td className="px-3 py-2">{s.firstName}</td>
                 <td className="px-3 py-2">{s.lastName}</td>
                 <td className="px-3 py-2">
@@ -107,13 +105,10 @@ const StudentList = () => {
                     {s.email}
                   </a>
                 </td>
-                <td className="px-3 py-2">
-                  {new Date(s.dob).toLocaleDateString()}
-                </td>
+                <td className="px-3 py-2">{new Date(s.dob).toLocaleDateString()}</td>
                 <td className="px-3 py-2">{s.department}</td>
                 <td className="px-3 py-2">{s.enrollmentYear}</td>
                 <td className="px-3 py-2">{s.isActive ? "✅" : "❌"}</td>
-
                 <td className="px-3 py-2">
                   <div className="flex gap-2">
                     <Link

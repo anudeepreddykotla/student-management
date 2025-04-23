@@ -43,7 +43,7 @@ const AddStudentForm = () => {
   return (
     <div className="mx-auto max-w-xl px-4 py-8">
       <h2 className="mb-6 text-2xl font-semibold text-indigo-700">
-        Add Student
+        Add Student
       </h2>
 
       <form
@@ -52,7 +52,7 @@ const AddStudentForm = () => {
       >
         {/* ID */}
         <div>
-          <label className="mb-1 block font-medium">Student ID</label>
+          <label className="mb-1 block font-medium">Student ID</label>
           <input
             required
             name="studentId"
@@ -66,7 +66,7 @@ const AddStudentForm = () => {
         {/* First / Last */}
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
-            <label className="mb-1 block font-medium">First Name</label>
+            <label className="mb-1 block font-medium">First Name</label>
             <input
               required
               minLength={2}
@@ -77,7 +77,7 @@ const AddStudentForm = () => {
             />
           </div>
           <div>
-            <label className="mb-1 block font-medium">Last Name</label>
+            <label className="mb-1 block font-medium">Last Name</label>
             <input
               required
               minLength={2}
@@ -103,7 +103,7 @@ const AddStudentForm = () => {
             />
           </div>
           <div>
-            <label className="mb-1 block font-medium">Date of Birth</label>
+            <label className="mb-1 block font-medium">Date of Birth</label>
             <input
               required
               type="date"
@@ -128,7 +128,7 @@ const AddStudentForm = () => {
             />
           </div>
           <div>
-            <label className="mb-1 block font-medium">Enrollment Year</label>
+            <label className="mb-1 block font-medium">Enrollment Year</label>
             <input
               required
               type="number"

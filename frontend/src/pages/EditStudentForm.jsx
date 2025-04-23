@@ -53,14 +53,9 @@ const EditStudentForm = () => {
 
   return (
     <div className="mx-auto max-w-xl px-4 py-8">
-      <h2 className="mb-6 text-2xl font-semibold text-indigo-700">
-        Edit Student
-      </h2>
+      <h2 className="mb-6 text-2xl font-semibold text-indigo-700">Edit Student</h2>
 
-      <form
-        onSubmit={handleSubmit}
-        className="space-y-4 rounded-xl bg-white p-6 shadow"
-      >
+      <form onSubmit={handleSubmit} className="space-y-6 rounded-xl bg-white p-6 shadow">
         <div>
           <label className="mb-1 block font-medium">Student ID</label>
           <input
@@ -71,7 +66,7 @@ const EditStudentForm = () => {
           />
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
           <div>
             <label className="mb-1 block font-medium">First Name</label>
             <input
@@ -96,7 +91,7 @@ const EditStudentForm = () => {
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
           <div>
             <label className="mb-1 block font-medium">Email</label>
             <input
@@ -121,7 +116,7 @@ const EditStudentForm = () => {
           </div>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
           <div>
             <label className="mb-1 block font-medium">Department</label>
             <input
